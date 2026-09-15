@@ -3,12 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <meta name="theme-color" content="#263522">
     <link rel="canonical" href="https://novaxstudios.art/creators/">
     <title>Creators | NovaX Studios™</title>
-    <link rel="stylesheet" href="/styles.css?v=20260915-2">
+    <link rel="stylesheet" href="/styles.css?v=20260915-4">
+    <script>
+      if (window.location.search.includes('v=')) {
+        window.history.replaceState(null, '', window.location.pathname + window.location.hash);
+      }
+    </script>
   </head>
-  <body class="placeholder-page">
+  <body class="simple-page">
     <header class="site-header">
       <a class="brand" href="/home/" aria-label="NovaX Studios home">
         <span class="brand-mark" aria-hidden="true">NX</span>
@@ -16,12 +24,33 @@
       </a>
       <nav class="primary-nav" aria-label="Primary navigation">
         <a href="/home/">Home</a>
-        <a href="/creators/" aria-current="page">Creators</a>
-        <a href="/merchandise/?v=20260915-3">Merchandise</a>
+        <a href="/creators/?v=20260915-5" aria-current="page">Creators</a>
+        <a href="/merchandise/?v=20260915-5">Merchandise</a>
         <a href="/investors/?v=20260915-4">Investors</a>
         <a href="/interested/?v=20260915-3">Interested?</a>
       </nav>
     </header>
+
+    <main class="simple-main">
+      <section class="simple-card" aria-labelledby="creators-title">
+        <p class="eyebrow">Future creator intake</p>
+        <h1 id="creators-title">Applications will open at a future date.</h1>
+        <p>
+          NovaX Studios™ plans to begin accepting creator applications on a date that has
+          not yet been announced. When applications open, we will welcome a limited number
+          of creators based on the budget available to support each partnership properly.
+        </p>
+        <p>
+          The application window, eligibility details and number of available places will
+          be published here when they are confirmed. Applications are not currently open,
+          and places cannot be reserved in advance.
+        </p>
+        <div class="simple-status">
+          <span>Status</span>
+          <strong>Applications not yet open</strong>
+        </div>
+      </section>
+    </main>
 
     <footer class="site-footer">
       <a class="brand footer-brand" href="/home/">
