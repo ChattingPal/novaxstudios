@@ -1027,6 +1027,282 @@ h2 {
   font-size: 0.9rem;
 }
 
+.career-page {
+  min-height: 100vh;
+  background: var(--pine-900);
+}
+
+.career-main {
+  padding: clamp(3.5rem, 6vw, 6rem) var(--page-gutter) clamp(4rem, 7vw, 6.5rem);
+  color: var(--white);
+  background:
+    radial-gradient(circle at 88% 4%, rgba(127, 148, 107, 0.2), transparent 22rem),
+    var(--pine-900);
+}
+
+.career-hero,
+.career-mission,
+.career-principles,
+.career-areas,
+.career-process,
+.career-openings,
+.career-equality {
+  width: 100%;
+  max-width: 1080px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.career-hero .eyebrow,
+.career-section-heading .eyebrow {
+  color: var(--sage-300);
+}
+
+.career-hero h1 {
+  max-width: 870px;
+  margin-bottom: 1.25rem;
+  font-size: clamp(2.4rem, 4.6vw, 3.8rem);
+  letter-spacing: -0.04em;
+}
+
+.career-lead {
+  max-width: 760px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.72);
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+
+.career-snapshot {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 2rem;
+}
+
+.career-snapshot span {
+  padding: 0.45rem 0.75rem;
+  color: var(--sage-300);
+  border: 1px solid rgba(255, 255, 255, 0.17);
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 750;
+  letter-spacing: 0.04em;
+}
+
+.career-mission {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.75fr) minmax(0, 1.25fr);
+  gap: clamp(2rem, 6vw, 6rem);
+  margin-top: clamp(3rem, 6vw, 5rem);
+  padding: clamp(2rem, 4vw, 3.5rem);
+  color: var(--pine-950);
+  background: var(--sage-300);
+  border-radius: 3px;
+}
+
+.career-mission .eyebrow,
+.career-areas .eyebrow {
+  color: var(--olive-700);
+}
+
+.career-mission h2,
+.career-areas h2,
+.career-equality h2 {
+  font-size: clamp(1.75rem, 3.2vw, 2.8rem);
+  line-height: 1.15;
+}
+
+.career-mission > div:last-child p {
+  margin-top: 0;
+  color: rgba(23, 32, 24, 0.76);
+  line-height: 1.72;
+}
+
+.career-mission > div:last-child p:last-child {
+  margin-bottom: 0;
+}
+
+.career-principles,
+.career-process,
+.career-openings {
+  margin-top: clamp(3.5rem, 7vw, 6rem);
+}
+
+.career-section-heading {
+  max-width: 760px;
+  margin-bottom: 2.25rem;
+}
+
+.career-section-heading h2 {
+  color: var(--white);
+  font-size: clamp(1.9rem, 3.5vw, 3rem);
+}
+
+.career-section-heading > p:last-child {
+  color: rgba(255, 255, 255, 0.68);
+  line-height: 1.68;
+}
+
+.career-principle-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.career-principle-grid article {
+  padding: clamp(1.4rem, 2.5vw, 2rem);
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 3px;
+}
+
+.career-principle-grid article > span,
+.career-process-grid li > span {
+  display: inline-block;
+  margin-bottom: 2.2rem;
+  color: var(--sage-300);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.career-principle-grid h3 {
+  margin-bottom: 0.7rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.career-principle-grid p,
+.career-process-grid p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 0.92rem;
+  line-height: 1.65;
+}
+
+.career-areas {
+  display: grid;
+  grid-template-columns: minmax(260px, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  margin-top: clamp(3rem, 6vw, 5rem);
+  padding: clamp(2rem, 4vw, 3.5rem);
+  color: var(--pine-950);
+  background: var(--sage-200);
+  border-radius: 3px;
+}
+
+.career-areas > div > p:last-child {
+  color: rgba(23, 32, 24, 0.72);
+  line-height: 1.68;
+}
+
+.career-area-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.career-area-list li {
+  padding: 0.65rem 0.85rem;
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(23, 32, 24, 0.13);
+  border-radius: 3px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.career-process-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  margin: 0;
+  padding: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  list-style: none;
+}
+
+.career-process-grid li {
+  padding: 1.7rem clamp(1rem, 2vw, 1.6rem);
+}
+
+.career-process-grid li + li {
+  border-left: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.career-process-grid li > span {
+  margin-bottom: 2rem;
+}
+
+.career-process-grid strong {
+  display: block;
+  margin-bottom: 0.65rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.18rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.career-opening-card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 2rem;
+  align-items: center;
+  padding: clamp(1.8rem, 4vw, 3rem);
+  color: var(--pine-950);
+  background: var(--sage-300);
+  border-radius: 3px;
+}
+
+.opening-status {
+  display: block;
+  margin-bottom: 0.75rem;
+  color: var(--olive-700);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.career-opening-card h3 {
+  margin-bottom: 0.65rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.7rem, 3vw, 2.5rem);
+  font-weight: 400;
+}
+
+.career-opening-card p {
+  margin: 0;
+  color: rgba(23, 32, 24, 0.72);
+}
+
+.opening-mark {
+  color: var(--olive-700);
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3rem;
+}
+
+.career-equality {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.75fr) minmax(0, 1.25fr);
+  gap: clamp(2rem, 5vw, 5rem);
+  align-items: start;
+  margin-top: clamp(3rem, 6vw, 5rem);
+  padding-top: clamp(2rem, 4vw, 3rem);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.career-equality > p {
+  margin: 0;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.72;
+}
+
 @media (max-width: 900px) {
   .site-header {
     align-items: flex-start;
@@ -1069,8 +1345,23 @@ h2 {
   .application-panel,
   .investor-vision,
   .investment-principle,
-  .investment-cta {
+  .investment-cta,
+  .career-mission,
+  .career-areas,
+  .career-equality {
     grid-template-columns: 1fr;
+  }
+
+  .career-process-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .career-process-grid li:nth-child(3) {
+    border-left: 0;
+  }
+
+  .career-process-grid li:nth-child(n + 3) {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
   }
 
   .application-button {
@@ -1094,8 +1385,27 @@ h2 {
 
 @media (max-width: 680px) {
   .investor-facts,
-  .support-grid {
+  .support-grid,
+  .career-principle-grid,
+  .career-process-grid {
     grid-template-columns: 1fr;
+  }
+
+  .career-process-grid li,
+  .career-process-grid li + li {
+    border-left: 0;
+  }
+
+  .career-process-grid li + li {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+  }
+
+  .career-opening-card {
+    grid-template-columns: 1fr;
+  }
+
+  .opening-mark {
+    display: none;
   }
 
   .investor-facts article,
