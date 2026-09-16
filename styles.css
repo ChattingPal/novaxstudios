@@ -101,6 +101,16 @@ a {
   letter-spacing: 0.08em;
 }
 
+.brand-mark.brand-logo {
+  display: block;
+  aspect-ratio: 1 / 1;
+  padding: 0;
+  object-fit: contain;
+  background: transparent;
+  border: 0;
+  border-radius: 3px;
+}
+
 .primary-nav {
   display: flex;
   flex-wrap: wrap;
