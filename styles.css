@@ -994,6 +994,275 @@ h2 {
   line-height: 1.65;
 }
 
+.about-page {
+  min-height: 100vh;
+  background: var(--pine-900);
+}
+
+.about-main {
+  padding: clamp(3.5rem, 6vw, 6rem) var(--page-gutter) clamp(4rem, 7vw, 6.5rem);
+  color: var(--white);
+  background:
+    radial-gradient(circle at 88% 4%, rgba(127, 148, 107, 0.2), transparent 22rem),
+    var(--pine-900);
+}
+
+.about-hero,
+.about-mission,
+.about-support,
+.about-partnership,
+.about-leadership,
+.about-cta {
+  width: 100%;
+  max-width: 1080px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.about-hero > .eyebrow,
+.about-section-heading .eyebrow {
+  color: var(--sage-300);
+}
+
+.about-hero h1 {
+  max-width: 900px;
+  margin-bottom: 1.25rem;
+  font-size: clamp(2.45rem, 4.8vw, 4.1rem);
+  letter-spacing: -0.045em;
+}
+
+.about-lead {
+  max-width: 800px;
+  margin: 0;
+  color: rgba(255, 255, 255, 0.74);
+  font-size: 1.07rem;
+  line-height: 1.75;
+}
+
+.about-facts {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  margin-top: clamp(2.5rem, 5vw, 4rem);
+  border-top: 1px solid rgba(255, 255, 255, 0.16);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.about-facts article {
+  padding: 1.6rem clamp(1rem, 2.5vw, 2rem) 1.6rem 0;
+}
+
+.about-facts article + article {
+  padding-left: clamp(1rem, 2.5vw, 2rem);
+  border-left: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.about-facts span,
+.about-facts strong {
+  display: block;
+}
+
+.about-facts span {
+  margin-bottom: 0.45rem;
+  color: var(--sage-300);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.about-facts strong {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(1.15rem, 2vw, 1.58rem);
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.about-mission,
+.about-partnership,
+.about-leadership {
+  display: grid;
+  grid-template-columns: minmax(240px, 0.78fr) minmax(0, 1.22fr);
+  gap: clamp(2rem, 6vw, 6rem);
+  margin-top: clamp(3rem, 6vw, 5rem);
+  padding: clamp(2rem, 4vw, 3.5rem);
+  border-radius: 3px;
+}
+
+.about-mission {
+  color: var(--pine-950);
+  background: var(--sage-300);
+}
+
+.about-partnership {
+  background: var(--olive-700);
+}
+
+.about-leadership {
+  color: var(--pine-950);
+  background: var(--sage-200);
+}
+
+.about-mission .eyebrow,
+.about-leadership .eyebrow,
+.about-cta .eyebrow {
+  color: var(--olive-700);
+}
+
+.about-partnership .eyebrow {
+  color: var(--sage-300);
+}
+
+.about-mission h2,
+.about-partnership h2,
+.about-leadership h2,
+.about-cta h2 {
+  font-size: clamp(1.75rem, 3.2vw, 2.8rem);
+  line-height: 1.15;
+}
+
+.about-copy p {
+  margin-top: 0;
+  color: rgba(23, 32, 24, 0.76);
+  line-height: 1.75;
+}
+
+.about-partnership .about-copy p {
+  color: rgba(255, 255, 255, 0.78);
+}
+
+.about-copy p:last-child,
+.about-leadership-intro p:last-child {
+  margin-bottom: 0;
+}
+
+.about-support {
+  margin-top: clamp(3.5rem, 7vw, 6rem);
+}
+
+.about-section-heading {
+  max-width: 760px;
+  margin-bottom: 2.25rem;
+}
+
+.about-section-heading h2 {
+  color: var(--white);
+  font-size: clamp(1.9rem, 3.5vw, 3rem);
+}
+
+.about-section-heading > p:last-child {
+  color: rgba(255, 255, 255, 0.68);
+  line-height: 1.68;
+}
+
+.about-support-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.about-support-grid article {
+  padding: clamp(1.4rem, 2.5vw, 2rem);
+  background: rgba(255, 255, 255, 0.045);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 3px;
+}
+
+.about-support-grid article > span {
+  display: inline-block;
+  margin-bottom: 2.4rem;
+  color: var(--sage-300);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+}
+
+.about-support-grid h3 {
+  margin-bottom: 0.7rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.45rem;
+  font-weight: 400;
+}
+
+.about-support-grid p,
+.about-leadership-intro > p:last-child {
+  margin-top: 0;
+  color: rgba(255, 255, 255, 0.68);
+  font-size: 0.92rem;
+  line-height: 1.68;
+}
+
+.about-leadership-intro > p:last-child {
+  color: rgba(23, 32, 24, 0.72);
+}
+
+.about-leadership-details {
+  margin: 0;
+}
+
+.about-leadership-details > div {
+  display: grid;
+  grid-template-columns: minmax(110px, 0.45fr) minmax(0, 1fr);
+  gap: 1.25rem;
+  padding: 1.1rem 0;
+  border-top: 1px solid rgba(23, 32, 24, 0.16);
+}
+
+.about-leadership-details > div:last-child {
+  border-bottom: 1px solid rgba(23, 32, 24, 0.16);
+}
+
+.about-leadership-details dt {
+  color: var(--olive-700);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.about-leadership-details dd {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.15rem;
+  line-height: 1.4;
+}
+
+.about-cta {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: clamp(2rem, 4vw, 4rem);
+  align-items: center;
+  margin-top: clamp(2rem, 4vw, 3rem);
+  padding: clamp(2rem, 4vw, 3.25rem);
+  color: var(--pine-950);
+  background: var(--sage-300);
+  border-radius: 3px;
+}
+
+.about-cta h2 {
+  margin-bottom: 0.75rem;
+}
+
+.about-cta p:last-child {
+  max-width: 650px;
+  margin: 0;
+  color: rgba(23, 32, 24, 0.72);
+}
+
+.about-button {
+  min-height: 3.5rem;
+  gap: 0.65rem;
+  color: var(--white);
+  background: var(--pine-900);
+  white-space: nowrap;
+}
+
+.about-button:hover,
+.about-button:focus-visible {
+  color: var(--white);
+  background: var(--olive-700);
+  transform: translateY(-2px);
+}
+
 .simple-page {
   display: flex;
   flex-direction: column;
@@ -1680,6 +1949,10 @@ h2 {
   .investor-vision,
   .investment-principle,
   .investment-cta,
+  .about-mission,
+  .about-partnership,
+  .about-leadership,
+  .about-cta,
   .career-mission,
   .career-areas,
   .career-equality {
@@ -1720,6 +1993,11 @@ h2 {
     white-space: normal;
   }
 
+  .about-button {
+    width: fit-content;
+    white-space: normal;
+  }
+
   .independence > div {
     justify-self: start;
   }
@@ -1733,6 +2011,8 @@ h2 {
 @media (max-width: 680px) {
   .investor-facts,
   .support-grid,
+  .about-facts,
+  .about-support-grid,
   .career-principle-grid,
   .career-process-grid {
     grid-template-columns: 1fr;
@@ -1779,6 +2059,21 @@ h2 {
 
   .investor-facts article + article {
     border-top: 1px solid rgba(255, 255, 255, 0.16);
+  }
+
+  .about-facts article,
+  .about-facts article + article {
+    padding: 1.25rem 0;
+    border-left: 0;
+  }
+
+  .about-facts article + article {
+    border-top: 1px solid rgba(255, 255, 255, 0.16);
+  }
+
+  .about-leadership-details > div {
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
   }
 
   .criteria-list li {
