@@ -1593,12 +1593,6 @@ h2 {
   color: rgba(23, 32, 24, 0.72);
 }
 
-.opening-mark {
-  color: var(--olive-700);
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 3rem;
-}
-
 .career-equality {
   display: grid;
   grid-template-columns: minmax(240px, 0.75fr) minmax(0, 1.25fr);
@@ -2045,10 +2039,6 @@ h2 {
 
   .career-opening-card {
     grid-template-columns: 1fr;
-  }
-
-  .opening-mark {
-    display: none;
   }
 
   .investor-facts article,
