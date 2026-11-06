@@ -1896,6 +1896,10 @@ h2 {
   border: 1px solid rgba(23, 32, 24, 0.19);
 }
 
+.privacy-retention-grid article:last-child:nth-child(odd) {
+  grid-column: 1 / -1;
+}
+
 .privacy-retention-grid span {
   display: block;
   margin-bottom: 0.65rem;
